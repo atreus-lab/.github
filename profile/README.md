@@ -2,7 +2,7 @@
 
 > Non-custodial, privacy-preserving payment infrastructure on **Stellar (Soroban)**.
 
-Send crypto/NFTs via a shareable link — no recipient wallet required. Powered by **Zero-Knowledge proofs** and **Passkey (WebAuthn)** security.
+Send crypto/NFTs via a shareable link, no recipient wallet required. Powered by **Zero-Knowledge proofs** and **Passkey (WebAuthn)** security.
 
 ## Repositories
 
@@ -15,4 +15,4 @@ Send crypto/NFTs via a shareable link — no recipient wallet required. Powered 
 
 ---
 
-*Inspired by [TipLink](https://tiplink.io) — bringing link-as-wallet to Stellar with ZK privacy.*
+*Bringing link-as-wallet to Stellar with ZK privacy.*
