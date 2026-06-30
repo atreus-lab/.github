@@ -1,17 +1,30 @@
 # Atreus Labs
 
-> Non-custodial, privacy-preserving payment infrastructure on **Stellar (Soroban)**.
+> Google-login wallet with privacy-preserving payment links and programmable ZK rules on Stellar.
+> No seed phrase. No identity leak. No double-claim. No proof sniping.
 
-Send crypto/NFTs via a shareable link, no recipient wallet required. Powered by **Zero-Knowledge proofs** and **Passkey (WebAuthn)** security.
+**Send money with rules only the right wallet can satisfy — without anyone learning who that wallet is.**
 
-## Repositories
+---
 
-| Repo | Description |
-|------|-------------|
-| [frontend](https://github.com/atreus-lab/atreus-frontend) | Next.js 15 web app — create/claim payment links |
-| [backend](https://github.com/atreus-lab/atreus-backend) | Express API — link management |
-| [contracts](https://github.com/atreus-lab/atreus-contracts) | Soroban smart contracts — escrow + ZK verifier |
-| [roadmap](https://github.com/atreus-lab/roadmap) | Vision, architecture, milestones, planning |
+## Monorepo
+
+All code now lives in a single monorepo at [github.com/atreus-lab/atreus](https://github.com/atreus-lab/atreus):
+
+| Directory | Tech | Purpose |
+|-----------|------|---------|
+| \`frontend/\` | Next.js 15 | Wallet UI, link create/claim |
+| \`backend/\` | Express + TS | Link management API, tx relay |
+| \`contracts/\` | Rust (Soroban) | Escrow + ZK verifier contracts |
+| \`docs/\` | Markdown | Vision, architecture, design |
+
+## Features
+
+- **Sign in with Google** — derive a Stellar wallet instantly, no seed phrase
+- **ZK payment links** — attach rules like \"only wallets holding >50 XLM can claim\"
+- **Zero-knowledge proofs** — recipient proves eligibility without revealing balance
+- **Auto-swaps** via Soroswap on deposit
+- **Passkey (WebAuthn)** — hardware-grade transaction security
 
 ---
 
